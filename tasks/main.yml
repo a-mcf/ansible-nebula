@@ -72,7 +72,7 @@
     - Restart_nebula
 
 - name: Verify configuration
-  ansible.builtin.command: "{{ nebula_bin_directory }}/nebula -test -config /etc/nebula/config.yaml 1>/dev/null"
+  ansible.builtin.command: "{{ nebula_bin_directory }}/nebula -test -config /etc/nebula/config.yaml"
   changed_when: false
 
 - name: Deploy systemd template
